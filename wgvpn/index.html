@@ -230,11 +230,15 @@
                         <h3 class="text-xl font-semibold">Websupport SK</h3>
                     </div>
                 </div>
-                <button onclick="window.location.href = '/ips/websupportsk.txt'" class="p-2 text-gray-400 hover:text-white focus:outline-none" title="Websupport SK IP címek" >
+                <button id="ipToggle" class="p-2 text-gray-400 hover:text-white focus:outline-none" title="Websupport SK IP címek">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
                 </button>
+            </div>
+            <div id="ipPopper" class="bg-gray-700 text-white p-4 rounded-lg shadow-lg hidden" role="tooltip">
+                <h4 class="text-lg font-semibold mb-2">Websupport SK IPs</h4>
+                <ul id="ipList" class="list-disc list-inside"></ul>
             </div>
         </div>
 
@@ -288,6 +292,8 @@
     <script src="/js/preloader.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <script defer src="https://a.fxtelekom.hu/script.js" data-website-id="75fa9852-928e-40f8-ae42-64253d94846a"></script>
+    <script src="js/ippopper.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     
 </body>
 </html>
